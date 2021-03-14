@@ -1,2 +1,4 @@
 # LeetCode
-Solved Leetcode problems
+
+Solved Leetcode problems.
+[Leetcode](https://leetcode.com)
