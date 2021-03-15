@@ -24,6 +24,18 @@ Output: [0,1]
 */
 
 func two_sum(nums []int, target int) []int {
+	// Create the hashtable
+	m := make(map[int]int)
+	// Loop throug the entire slice
+	for index1, numL1 := range nums {
+		// Check if target - numL1 exist in the hashtable
+		if index2, found := m[target-numL1]; found {
+			//  Return new slice []int with index1 and index2
+			return []int{index2, index1}
+		}
+		// If not add numL1 as key and index 1 as value
+		m[numL1] = index1
+	}
 
 	return nil
 }
